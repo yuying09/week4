@@ -1,0 +1,52 @@
+.header{
+  color: white;
+  background: $primary;
+  padding: 16px 0;
+  width: 100%;
+  &-wrapper{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .logo{
+    width: 80px;
+    height: 48px;
+    display: block;
+  }
+}
+
+.nav{
+  display: flex;
+  font-size: 20px;
+  &-item{
+    padding: 9px 32px;
+    text-align: center;
+  }
+}
+
+@include mobile-larger{
+  .header{
+    padding: 0px;
+    margin: 0px;
+  
+  &-wrapper{
+    max-width: 100%;
+    flex-direction: column;
+    justify-content:center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .logo{
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+          }
+  .nav{
+    width: 100%;
+    flex-wrap: wrap;
+  &-item{
+    width: 50%;
+    border: 1px solid #fff;
+  }
+  }
+}

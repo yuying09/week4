@@ -1,0 +1,436 @@
+.banner{
+  background-image: url("../assets/images/week3-4/home-header.png");
+  background-size: cover;
+  height: calc(100vh - 80px);
+  &-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  }
+  &-title{
+    font-size: 36px;
+    color: #650300;
+  }
+  &-subtitle{
+    font-size: 64px;
+    color: #650300;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  span{
+    font-size: 20px;
+    color: #fff;
+    background: #AA0601;
+    padding: 6px 12px;
+  }
+}
+
+@include pad{
+  .banner{
+  background-image: url("../assets/images/week3-4/home-header-sm.png");
+}
+}
+
+@include mobile{
+  .banner{
+  &-title{
+    font-size: 16px;
+    
+  }
+  &-subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+}
+}
+
+.feature{
+  background: #FBF2F2;
+  &-title{
+    font-size: 48px;
+    color: #650300;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 80px;
+    padding-bottom: 32px;
+  }
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  &-card{
+    width: calc(25% - 24px);
+    margin: 0 12px;
+  }
+  
+  &-img{
+    width: 83px;
+    height: 83px;
+    align-items: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  &-subtitle{
+    font-size: 24px;
+    color: #650300;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  &-text{
+    font-size: 16px;
+  }
+}
+@include pad{
+  .feature{
+    &-card{
+      width: calc(50% - 24px);
+    }
+    &-text{
+      margin-bottom: 24px;
+    }
+  }
+}
+@include mobile{
+  .feature{
+    &-list{
+      padding-bottom: 40px;
+    }
+    &-card{
+      width:100%;
+    }
+    &-title{
+      font-size: 24px;
+      padding-top: 40px;
+    }
+    &-text{
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.classical{
+  &-title{
+    font-size: 48px;
+    font-weight: bold;
+    color: #650300;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  &-card{
+    width: calc(33.33% - 24px);
+    margin: 0 12px;
+  }
+  &-img{
+    width: 348px;
+    height: 348px;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+  &-text{
+    font-size: 48px;
+    font-weight: bold;
+    color: #AA0601;
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+@include pad{
+  .classical{
+    &-card{
+      width: 100%;
+      margin: 12px 0;
+    }
+    &-img{
+      width: 348px;
+      height: 348px;
+      margin-bottom: 8px;
+      display: block;
+      margin: auto;
+    }
+    &-text{
+      font-size: 48px;
+      font-weight: bold;
+      color: #AA0601;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}
+
+@include mobile{
+  .classical{
+    &-title{
+      font-size: 24px;
+      padding-top: 40px;
+      padding-bottom: 24px;
+    }
+    &-list{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+    }
+    &-card{
+      width: 100%;
+      margin: 12px 0;
+    }
+    &-img{
+      width: 348px;
+      height: 348px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.cobrand{
+  background-image: url(../assets/images/week3-4/index-bg.png);
+  background-size: cover;
+  
+  &-title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+  &-list{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+  &-img{
+    width: 648px;
+    height: 240px;
+    margin-bottom: 8px;
+  }
+  &-text{
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    color: #AA0601;
+    background-color: #fff;
+    text-align: center;
+  }
+}
+
+@include pad{
+  .cobrand{
+    background-image: url(../assets/images/week3-4/index-bg-md.png);
+    &-list{
+      flex-wrap: wrap;
+      margin-bottom: -24px;
+    }
+    &-img{
+      width: 696px;
+    }
+    &-card{
+      margin-bottom: 24px;
+
+    }
+  }
+}
+
+@include mobile{
+  .cobrand{
+    background-image: url(../assets/images/week3-4/index-bg-sm.png);
+    &-title{
+      font-size: 24px;
+      padding-top: 40px;
+      padding-bottom: 24px;
+    }
+    &-list{
+      flex-wrap: wrap;
+      margin-bottom: -24px;
+    }
+    &-img{
+      width: 696px;
+    }
+    &-card{
+      margin-bottom: 24px;
+
+    }
+  }
+}
+.recommand{
+  &-title{
+    font-size: 48px;
+    font-weight: bold;
+    color: #650300;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    padding-bottom: 80px;
+  }
+  &-card{
+    width: calc(25% - 24px);
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-img{
+    width: 306px;
+    height: 306px;
+    border-radius: 4px 4px 0px 0px;
+    display: block;
+    margin: auto;
+  }
+  &-card-body{
+    padding: 16px;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &-time{
+    font-size: 14px;
+    color: #707070;
+    margin-top: auto;
+    align-items: end;
+  }
+  }
+
+  @include pad{
+    .recommand{
+    &-list{
+      margin-bottom: -24px;
+    }
+    &-card{
+      width: calc(50% - 24px);
+      margin-bottom: 24px;
+    }
+    &-img{
+      width: 336px;
+    }
+    }}
+  
+    @include mobile{
+      .recommand{
+        &-title{
+          font-size: 24px;
+          padding-bottom: 24px;
+        }
+        &-list{
+          margin: -8px 0;
+          padding-bottom: 40px;
+        }
+        &-card{
+          width: 100%;
+          margin: 8px 0;
+        }
+        &-img{
+          width: 348px;
+        }
+        }
+      
+    }
+    
+.contact{
+  background: #FBF2F2;
+  padding: 80px 0;
+  &-wrapper{
+    max-width: 636px;
+    margin: 0 auto;
+  }
+  &-title{
+    font-size: 48px;
+    color: #650300;
+    font-weight: bold;
+    text-align: center;
+  }
+  &-desc{
+    font-size: 20px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+  &-form-label{
+    display: block;
+    margin-bottom: 8px;
+  }
+  &-form-input{
+    display: block;
+    width: 100%;
+    height: 36px;
+    background: #FBF2F2;
+    padding: 6px 12px;
+    border: solid 1px #000000;
+    margin-bottom: 16px;
+  }
+  textarea{
+    height: 136px;
+  }
+  .agree-item{
+    margin-bottom: 48px;
+  }
+  &-form-btn{
+    background: #AA0601;
+    width: 416px;
+    height: 56px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    display: block;
+    margin: auto;
+  }
+}
+
+@include pad{
+  .contact{
+    &-desc{
+      font-size: 16px;
+      margin: 24px 0;
+    }
+    &-form-btn{
+    width: 336px;
+  }
+  }
+  
+}
+@include mobile{
+  .contact{
+    padding: 40px 0;
+    &-title{
+      font-size: 24px;
+    }
+    &-desc{
+      font-size: 16px;
+      margin: 24px 0;
+    }
+    
+    
+    .agree-item{
+      margin-bottom: 24px;
+    }
+    &-form-btn{
+      width: 348px;
+    }
+  }
+}
+

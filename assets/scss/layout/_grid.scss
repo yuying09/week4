@@ -1,0 +1,26 @@
+$gap:24px;
+$columns-num:12;
+
+.container{
+    max-width: 1320px;//86*12+24*11=1296+12*2(左右padding)
+    margin: 0 auto;
+    padding-left: calc($gap/2);
+    padding-right: calc($gap/2);
+    @include pad{
+        max-width: 720px;//36*12+24*11=696+12*2
+    }
+    @include mobile{
+        max-width:372px ;//69*4+24*3=348+12*2
+    }
+}
+
+.container-md-fluid{
+    max-width: 1320px;
+    padding: 0 12px;
+}
+
+.container-sm-fluid{
+    max-width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
